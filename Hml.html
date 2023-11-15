@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+    background-color: rebeccapurple;
+           
+        }
+        .contain{
+            background-color: hotpink;
+            width: 300px;
+            height: 400px;
+            margin-top: 50px;
+            /* display: flex; */
+            /* padding-top: 1px; */
+            border-radius: 20px;
+margin: auto;
+        }
+        .contain:hover{
+            box-shadow: 0px 0px 50px slateblue;
+        }
+        input{
+            margin-left: 20px;
+            margin-top: 20px;
+            height: 50px;
+            border-radius: 10px;
+            width: 250px;
+            border: none;
+            color: red;
+            background-color: pink;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: x-large;
+            font: 40;
+            padding: 5px;
+            text-align: end;
+        }
+        input:hover{
+            box-shadow: 0px 0px 20px black;
+            transition: all 3ms linear;
+        }
+        button{
+            margin-left: 45px;
+            margin-top: 10px;
+            background: white;
+            border: none;
+            width: 80px;
+            height: 40px;
+            border-radius: 10px;
+        }
+        button:hover{
+        box-shadow: 0px 0px 20px black;
+        transition: all 3ms linear;
+        }
+        button:active{
+            background-color: black;
+            transition: all 3ms linear;
+            color: white;
+        }
+        div{
+            margin: auto;
+            margin-top: 150px;
+        }
+        .p{
+            width: 200px;
+            background-color: black;
+            height: 50px;
+            text-align: end;
+            margin-top: 20px;
+            padding-top: 10px;
+            overflow-x: scroll;
+            border-radius: 5px;
+        }
+        p{
+            color: white;
+            height: 50px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 40px;
+            font-weight: 100;
+        }
+        ::-webkit-scrollbar{
+            height: 20px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <main class="contain">
+        <div>
+            <div class="p">
+                <p id="word"></p>            
+                 </div>
+        <input type="number" value="" id="Inp">
+        <input type="number" value="" id="Inp2">
+        <button onclick="givename()">Addition</button>
+        <button onclick="me()">Minus</button>
+        <br>
+        <button onclick="ame()">Divide</button>
+        <button onclick="mame()">Multiply</button>
+                 
+        </div>
+    </main>
+</body>
+</html>
+<script>
+    alert('Welcome Viewer')
+    let para = document.getElementById('word')
+function givename(){
+  let kie = (document.getElementById('Inp').value);
+ let kal =  (document.getElementById('Inp2').value);
+ 
+ console.log((Number(kie)) + (Number(kal)));
+ 
+ para.innerHTML = ((Number(kie)) + (Number(kal)))
+}
+function me(){
+  let kie = (document.getElementById('Inp').value);
+ let kal =  (document.getElementById('Inp2').value);
+ 
+ console.log((Number(kie)) - (Number(kal)));
+ para.innerHTML = ((Number(kie)) - (Number(kal)))
+}
+function ame(){
+  let kie = (document.getElementById('Inp').value);
+ let kal =  (document.getElementById('Inp2').value);
+ 
+ console.log((Number(kie)) / (Number(kal)));
+ para.innerHTML = ((Number(kie)) / (Number(kal)))
+}
+
+function mame(){
+  let kie = (document.getElementById('Inp').value);
+ let kal =  (document.getElementById('Inp2').value);
+ 
+ console.log((Number(kie)) * (Number(kal)));
+ para.innerHTML = ((Number(kie)) * (Number(kal)))
+}
+
+</script>
